@@ -1,0 +1,10 @@
+.maindiv{
+    background-color: darkgray;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 110px;
+    font-family: 'Racing Sans One', cursive;
+}
+.fsize{
+    font-size: 80px;
+}
