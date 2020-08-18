@@ -67,12 +67,12 @@ export default class Lrb extends Component {
             }
         }
         return (
-            <div className="pb-5" style={{ backgroundColor: `${this.state.enableDisble ? 'red' : 'green'}` }}>
+            <div className="pb-5 shadow rounded" style={{ backgroundColor: `${this.state.enableDisble ? 'red' : 'green'}` }}>
                 <h4>Left VS Right Brain</h4>
                 <h1>{this.state.score}</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm">
                             <CountdownCircleTimer
                                 key={this.state.key}
                                 isPlaying={this.state.isPlaying}
@@ -87,10 +87,10 @@ export default class Lrb extends Component {
                                 {renderTime}
                             </CountdownCircleTimer>
                         </div>
-                        <div class="col-sm d-lg-block bg-white p-10 mb-5 rounded-pill">
+                        <div className="col-sm d-lg-block bg-white p-10 mb-5 rounded-pill">
                                 <h3 className="mt-2 fsize" style={{ color: `${this.state.randomColor1}` }}>{this.state.randomColor2}</h3>
                         </div>
-                        <div class="col-sm">
+                        <div className="col-sm">
                             <button disabled={this.state.enableDisble} className="btn btn-success m-3" onClick={this.right}>Right</button>
                             <button disabled={this.state.enableDisble} className="btn btn-danger" onClick={this.wrong}>Wrong</button><br />
                             <button onClick={this.startGame} className="btn btn-primary">Start Game</button>

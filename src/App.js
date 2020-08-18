@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './mainapp.css';
-import Lrb from '../src/LeftVSRight brain/LRB';
+
+import Mainapp from './Appbar';
 function App() {
   return (
     <div className="maindiv">
@@ -9,7 +10,7 @@ function App() {
         <h1>Mind game</h1>
       </div>
       <div>
-        <Lrb/>
+        <Mainapp/>
       </div>
     </div>
   );
