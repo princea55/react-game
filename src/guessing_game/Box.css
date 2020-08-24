@@ -1,0 +1,19 @@
+.root{
+    display: flex;
+    justify-content: center;
+}
+.Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.randomWord{
+    height: 3pc;
+    width: 10pc;
+    background-color: coral;
+    color: black;
+    margin: auto;
+   
+    border-radius: 4px;
+}

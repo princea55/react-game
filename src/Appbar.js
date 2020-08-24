@@ -21,6 +21,7 @@ import { createBrowserHistory } from "history";
 
 import Lrb from '../src/LeftVSRight brain/LRB';
 import Multitasking from './multitasking/multitasking';
+import Process from './guessing_game/Process';
 const history = createBrowserHistory();
 const drawerWidth = 240;
 
@@ -156,6 +157,10 @@ export default function Mainapp() {
                         <ListItemIcon><InboxIcon /></ListItemIcon>
                             <ListItemText>Multitasking</ListItemText>
                         </ListItem>
+                        <ListItem button component={Link} to="/character_guessing/" >
+                        <ListItemIcon><InboxIcon /></ListItemIcon>
+                            <ListItemText>Guessing</ListItemText>
+                        </ListItem>
                     </List>
                     <Divider />
                     
@@ -171,6 +176,11 @@ export default function Mainapp() {
                         exact
                         path="/multitasking/"
                         render={(routeprops) => <Multitasking  {...routeprops} />}
+                    />
+                    <Route
+                        exact
+                        path="/character_guessing/"
+                        render={(routeprops) => <Process  {...routeprops} />}
                     />
                 </main>
             </Router>
