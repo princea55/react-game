@@ -76,6 +76,7 @@ export default class Multitasking extends Component {
         var varcounter = " " + this.state.counter;
         return (
             <div>
+                <h4>Under Construction Game</h4>
                 <h2>Score: {this.state.score}</h2>
                 <p>{typeof(this.state.counter)}</p>
                 <h2>MainCounter: {this.state.maincount} StrCounter: {this.state.counter}</h2>
